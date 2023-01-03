@@ -1,0 +1,252 @@
+<!doctype html><html><head><meta charset=utf-8><title>Functional programming in Go for beginners: A tutorial 👨🏼‍💻</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><link rel=stylesheet href=https://AceTheOps.com/plugins/slick/slick.css><link rel=stylesheet href=https://AceTheOps.com/plugins/slick/slick-theme.css><link rel=stylesheet href=https://AceTheOps.com/plugins/font-awesome/css/font-awesome.min.css><link rel=stylesheet href=https://AceTheOps.com/plugins/magnafic-popup/magnific-popup.css><link href=https://AceTheOps.com/scss/style.min.css rel=stylesheet><link rel="shortcut icon" href=https://AceTheOps.com/images/favicon.ico type=image/x-icon><link rel=icon href=https://AceTheOps.com/images/favicon.png type=image/x-icon><script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQTR1NVY6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-FCQTR1NVY6")</script></head><body><nav class="navbar navbar-expand-lg fixed-top"><div class=container><a href=https://AceTheOps.com/ class=navbar-brand><img src=https://AceTheOps.com/images/site-navigation/logo.png alt=site-logo></a>
+<button type=button class="navbar-toggler collapsed" data-toggle=collapse data-target=#navbarCollapse>
+<span class=navbar-toggler-icon></span>
+<span class=navbar-toggler-icon></span>
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse justify-content-between" id=navbarCollapse><ul class="nav navbar-nav main-navigation my-0 mx-auto"><li class=nav-item><a href=https://AceTheOps.com/#home class="nav-link text-dark text-sm-center p-2">Home</a></li><li class=nav-item><a href=https://AceTheOps.com/#about class="nav-link text-dark text-sm-center p-2">About</a></li><li class=nav-item><a href=https://AceTheOps.com/#service class="nav-link text-dark text-sm-center p-2">Service</a></li><li class=nav-item><a href=https://AceTheOps.com/#portfolio class="nav-link text-dark text-sm-center p-2">Work</a></li><li class=nav-item><a href=https://AceTheOps.com/#resume class="nav-link text-dark text-sm-center p-2">Resume</a></li><li class=nav-item><a href=https://AceTheOps.com/#skills class="nav-link text-dark text-sm-center p-2">Skills</a></li><li class=nav-item><a href=https://AceTheOps.com/#contact class="nav-link text-dark text-sm-center p-2">Contact</a></li></ul><div class=navbar-nav><a href=https://AceTheOps.com/blog class="btn btn-primary btn-zoom hire_button">Blog</a></div></div></div></nav><div id=content><header class=breadCrumb><div class=container><div class=row><div class="col-lg-10 col-md-12 offset-lg-1 offset-md-0 text-center"><h3 class=breadCrumb__title>Functional programming in Go for beginners: A tutorial 👨🏼‍💻</h3><nav aria-label=breadcrumb class="d-flex justify-content-center"><ol class="breadcrumb align-items-center"><li class=breadcrumb-item><a href=https://AceTheOps.com/>Home</a></li><li class=breadcrumb-item><a href=https://AceTheOps.com/blog>All Post</a></li><li class="breadcrumb-item active" aria-current=page>Functional programming in Go for beginners: A tutorial 👨🏼‍💻</li></ol></nav></div></div><ul class=post-meta><li><i class="fa fa-calendar"></i>
+December 27, 2022</li><li><i class="fa fa-clock-o"></i>
+9 mins read</li><li><i class="fa fa-tag"></i>
+<a class=text-capitalize href=https://AceTheOps.com/tags/go-lang/>go-lang</a>
+<a class=text-capitalize href=https://AceTheOps.com/tags/patterns/>patterns</a>
+<a class=text-capitalize href=https://AceTheOps.com/tags/fx_programming/>fx_programming</a></li><li><i class="fa fa-folder-open"></i>
+<a class=text-capitalize href=https://AceTheOps.com/categories/blog/>blog</a></li></ul></div></div></div></div></header><section class="section singleBlog"><div class=svg-img><img src=https://AceTheOps.com/images/hero/figure-svg.svg alt></div><div class=animate-shape><img src=https://AceTheOps.com/images/skill/skill-background-shape.svg alt><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600"><defs><linearGradient id="d" x1=".929" y1=".111" x2=".263" y2=".935" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#f1f6f9"/><stop offset="1" stop-color="#f1f6f9" stop-opacity="0"/></linearGradient></defs><g data-name="blob-shape (3)"><path class="blob" fill="url(#d)" d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z"/></g></svg></div><div class=animate-pattern><img src=https://AceTheOps.com/images/service/background-pattern.svg alt=background-shape></div><div class=container><div class=row><div class=col-lg-12><div class=singleBlog__feature><img src=https://AceTheOps.com/ alt=feature-image></div></div></div><div class="row mt-5"><div class=col-lg-12><div class=singleBlog__content><p>Functional programming is a programming paradigm that emphasizes the use of functions to transform data and minimize the use of shared state and mutable data. In Go (also known as Golang), functional programming can be achieved using first-class functions, anonymous functions, and higher-order functions.</p><h4 id=golang-is-a-multi-paradigm-programming-language-as-a-golang-programmer-why-uses-functional-programming>Golang is a multi-paradigm programming language. As a Golang programmer why uses functional programming?</h4><p>Golang is not a functional language but has a lot of features that enable us to applies functional principles in the development, turning our code more elegant, concise, maintainable, easier to understand and test.</p><p>Here are some examples of functional programming in Go:</p><h3 id=first-class-functions>First-class functions</h3><p>In Go, functions are first-class citizens, which means that they can be assigned to variables, passed as arguments to other functions, and returned as values from functions.</p><p>Here&rsquo;s an example of a function that takes a function as an argument and returns a function as a result:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-golang data-lang=golang><span style=display:flex><span><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> <span style=color:#e6db74>&#34;fmt&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// The function `add` takes an integer and returns a function that takes another integer and returns an integer.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>add</span>(<span style=color:#a6e22e>x</span> <span style=color:#66d9ef>int</span>) <span style=color:#66d9ef>func</span>(<span style=color:#66d9ef>int</span>) <span style=color:#66d9ef>int</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>func</span>(<span style=color:#a6e22e>y</span> <span style=color:#66d9ef>int</span>) <span style=color:#66d9ef>int</span> {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>x</span> <span style=color:#f92672>+</span> <span style=color:#a6e22e>y</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Assign the result of `add` to a variable.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>plusTwo</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>add</span>(<span style=color:#ae81ff>2</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Call the function stored in `plusTwo`.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>plusTwo</span>(<span style=color:#ae81ff>3</span>)) <span style=color:#75715e>// Output: 5
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>}
+</span></span></code></pre></div><h3 id=anonymous-functions>Anonymous functions</h3><p>Go also supports anonymous functions, also known as lambda functions or closures. Anonymous functions are functions that are defined and called in the same place, without a name.</p><p>Here&rsquo;s an example of an anonymous function that is passed as an argument to the fmt.Println function:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-golang data-lang=golang><span style=display:flex><span><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> <span style=color:#e6db74>&#34;fmt&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Define an anonymous function and pass it as an argument to `fmt.Println`.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#66d9ef>func</span>(<span style=color:#a6e22e>x</span> <span style=color:#66d9ef>int</span>) <span style=color:#66d9ef>int</span> {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>x</span> <span style=color:#f92672>*</span> <span style=color:#a6e22e>x</span>
+</span></span><span style=display:flex><span>    }(<span style=color:#ae81ff>2</span>)) <span style=color:#75715e>// Output: 4
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>}
+</span></span></code></pre></div><h3 id=higher-order-functions>Higher-order functions</h3><p>Higher-order functions are functions that take one or more functions as arguments or return a function as a result. In Go, we can use higher-order functions to abstract common patterns of function usage, such as iterating over a collection of data and applying a function to each element.</p><p>Here&rsquo;s an example of a higher-order function map that applies a given function to each element of a slice:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-golang data-lang=golang><span style=display:flex><span><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> <span style=color:#e6db74>&#34;fmt&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Define a slice of integers.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>numbers</span> <span style=color:#f92672>:=</span> []<span style=color:#66d9ef>int</span>{<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>2</span>, <span style=color:#ae81ff>3</span>, <span style=color:#ae81ff>4</span>, <span style=color:#ae81ff>5</span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Use the `map` function to apply the `square` function to each element of the slice.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>squares</span> <span style=color:#f92672>:=</span> <span style=color:#66d9ef>map</span>(<span style=color:#a6e22e>square</span>, <span style=color:#a6e22e>numbers</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>squares</span>) <span style=color:#75715e>// Output: [1 4 9 16 25]
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// The `square` function returns the square of an integer.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>square</span>(<span style=color:#a6e22e>x</span> <span style=color:#66d9ef>int</span>) <span style=color:#66d9ef>int</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>x</span> <span style=color:#f92672>*</span> <span style=color:#a6e22e>x</span>
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>Functional design patterns are reusable solutions to common problems in functional programming. In Go, several design patterns from the functional programming world can be implemented using the language&rsquo;s support for first-class functions and anonymous functions.</p><p>Now, we&rsquo;ll look at three of these design patterns: monads, functors, and monoids.</p><p>We&rsquo;ll see how these patterns can help us write cleaner, more expressive code, and we&rsquo;ll look at examples of how to use them in Go.</p><h3 id=monads>Monads</h3><p>A monad is a design pattern that allows us to chain operations together in a pipeline, while abstracting away the details of how the operations are performed. In functional programming, a monad is often used to represent computations that have side effects, such as reading from a file or making an HTTP request.</p><p>In Go, we can use anonymous functions and closures to implement monads. Here&rsquo;s an example of a monad that reads a file and returns the contents as a string:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-golang data-lang=golang><span style=display:flex><span><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> (
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;bufio&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;fmt&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;os&#34;</span>
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// The `ReadFile` function returns a monad that reads a file and returns its contents as a string.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>ReadFile</span>(<span style=color:#a6e22e>path</span> <span style=color:#66d9ef>string</span>) <span style=color:#66d9ef>func</span>() (<span style=color:#66d9ef>string</span>, <span style=color:#66d9ef>error</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>func</span>() (<span style=color:#66d9ef>string</span>, <span style=color:#66d9ef>error</span>) {
+</span></span><span style=display:flex><span>        <span style=color:#75715e>// Open the file.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#a6e22e>file</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>os</span>.<span style=color:#a6e22e>Open</span>(<span style=color:#a6e22e>path</span>)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#34;&#34;</span>, <span style=color:#a6e22e>err</span>
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>defer</span> <span style=color:#a6e22e>file</span>.<span style=color:#a6e22e>Close</span>()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e>// Read the contents.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>contents</span> <span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>scanner</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>bufio</span>.<span style=color:#a6e22e>NewScanner</span>(<span style=color:#a6e22e>file</span>)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> <span style=color:#a6e22e>scanner</span>.<span style=color:#a6e22e>Scan</span>() {
+</span></span><span style=display:flex><span>            <span style=color:#a6e22e>contents</span> <span style=color:#f92672>+=</span> <span style=color:#a6e22e>scanner</span>.<span style=color:#a6e22e>Text</span>() <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;\n&#34;</span>
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>scanner</span>.<span style=color:#a6e22e>Err</span>(); <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#34;&#34;</span>, <span style=color:#a6e22e>err</span>
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>contents</span>, <span style=color:#66d9ef>nil</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Define the path to the file.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>path</span> <span style=color:#f92672>:=</span> <span style=color:#e6db74>&#34;hello.txt&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Use the monad to read the file.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>contents</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>ReadFile</span>(<span style=color:#a6e22e>path</span>)()
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        panic(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>contents</span>)
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>In this example, the ReadFile function returns a function that performs the file reading operation when called. This allows us to chain multiple monads together and delay the execution of the operations until the final result is needed.</p><h3 id=functors>Functors</h3><p>A functor is a design pattern that represents a container or structure that can be mapped over. In functional programming, a functor is often used to apply a function to each element of a collection and return a new collection with the transformed elements.</p><p>In Go, we can use higher-order functions and anonymous functions to implement functors. Here&rsquo;s an example of a functor that maps a function over a slice of integers:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-golang data-lang=golang><span style=display:flex><span><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> <span style=color:#e6db74>&#34;fmt&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// The `IntSlice` type represents a functor that maps over a slice of integers.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>type</span> <span style=color:#a6e22e>IntSlice</span> <span style=color:#66d9ef>struct</span> {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>slice</span> []<span style=color:#66d9ef>int</span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// The `Map` method applies a given function to each element of the slice and returns a new slice with the transformed elements.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>func</span> (<span style=color:#a6e22e>s</span> <span style=color:#a6e22e>IntSlice</span>) <span style=color:#a6e22e>Map</span>(<span style=color:#a6e22e>f</span> <span style=color:#66d9ef>func</span>(<span style=color:#66d9ef>int</span>) <span style=color:#66d9ef>int</span>) <span style=color:#a6e22e>IntSlice</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>result</span> []<span style=color:#66d9ef>int</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> <span style=color:#a6e22e>_</span>, <span style=color:#a6e22e>x</span> <span style=color:#f92672>:=</span> <span style=color:#66d9ef>range</span> <span style=color:#a6e22e>s</span>.<span style=color:#a6e22e>slice</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>result</span> = append(<span style=color:#a6e22e>result</span>, <span style=color:#a6e22e>f</span>(<span style=color:#a6e22e>x</span>))
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>IntSlice</span>{<span style=color:#a6e22e>result</span>}
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Define a functor.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>numbers</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>IntSlice</span>{[]<span style=color:#66d9ef>int</span>{<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>2</span>, <span style=color:#ae81ff>3</span>, <span style=color:#ae81ff>4</span>, <span style=color:#ae81ff>5</span>}}   
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Use the `Map` method to apply the `square` function to each element of the slice.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>squares</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>numbers</span>.<span style=color:#a6e22e>Map</span>(<span style=color:#66d9ef>func</span>(<span style=color:#a6e22e>x</span> <span style=color:#66d9ef>int</span>) <span style=color:#66d9ef>int</span> {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>x</span> <span style=color:#f92672>*</span> <span style=color:#a6e22e>x</span>
+</span></span><span style=display:flex><span>    })
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>squares</span>.<span style=color:#a6e22e>slice</span>) <span style=color:#75715e>// Output: [1 4 9 16 25]
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>}
+</span></span></code></pre></div><p>In this example, the <code>IntSlice</code> type represents a functor that maps over a slice of integers. The <code>Map</code> method takes a function as an argument and applies it to each element of the slice, returning a new <code>IntSlice</code> with the transformed elements.</p><h3 id=monoids>Monoids</h3><p>A monoid is a design pattern that represents an associative binary operation with an identity element. In functional programming, a monoid is often used to combine values in a way that is both commutative and associative, such as adding numbers or concatenating strings.</p><p>In Go, we can use anonymous functions and the <code>interface</code> type to implement monoids. Here&rsquo;s an example of a monoid that represents integer addition:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-golang data-lang=golang><span style=display:flex><span><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> <span style=color:#e6db74>&#34;fmt&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// The Monoid interface represents a monoid.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>type</span> <span style=color:#a6e22e>Monoid</span> <span style=color:#66d9ef>interface</span> {
+</span></span><span style=display:flex><span><span style=color:#a6e22e>Identity</span>() <span style=color:#66d9ef>interface</span>{}
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>Op</span>(<span style=color:#66d9ef>interface</span>{}) <span style=color:#66d9ef>interface</span>{}
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// The IntAddition type represents integer addition as a monoid.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>type</span> <span style=color:#a6e22e>IntAddition</span> <span style=color:#66d9ef>struct</span>{}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// The Identity method returns the identity element for integer addition (0).
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>func</span> (<span style=color:#a6e22e>IntAddition</span>) <span style=color:#a6e22e>Identity</span>() <span style=color:#66d9ef>interface</span>{} {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// The Op method returns the result of performing integer addition on two integers.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>func</span> (<span style=color:#a6e22e>IntAddition</span>) <span style=color:#a6e22e>Op</span>(<span style=color:#a6e22e>x</span> <span style=color:#66d9ef>interface</span>{}) <span style=color:#66d9ef>interface</span>{} {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>func</span>(<span style=color:#a6e22e>y</span> <span style=color:#66d9ef>interface</span>{}) <span style=color:#66d9ef>interface</span>{} {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>x</span>.(<span style=color:#66d9ef>int</span>) <span style=color:#f92672>+</span> <span style=color:#a6e22e>y</span>.(<span style=color:#66d9ef>int</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Define a monoid.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>addition</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>IntAddition</span>{}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Use the monoid to add some numbers.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>sum</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>addition</span>.<span style=color:#a6e22e>Op</span>(<span style=color:#ae81ff>1</span>)(<span style=color:#ae81ff>2</span>)(<span style=color:#ae81ff>3</span>)(<span style=color:#ae81ff>4</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>sum</span>) <span style=color:#75715e>// Output: 10
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>}
+</span></span></code></pre></div><p>In this example, the <code>IntAddition</code> type represents integer addition as a monoid. The <code>Identity</code> method returns the identity element (0), and the <code>Op</code> method returns a function that performs integer addition on two integers. By calling the <code>Op</code> method multiple times, we can chain the addition operations together and delay the evaluation until the final result is needed.</p><p>I hope these examples give you a good overview of monads, functors, and monoids in Go.</p><p>These design patterns can help you write more expressive and reusable code, and they are a powerful tool in the functional programming toolkit.</p><h2 id=case-study-implementing-a-functional-pipeline>Case study: Implementing a functional pipeline</h2><p>One common use case for functional programming in Go is implementing a pipeline, which is a series of functions that transform and process data.</p><p>Here&rsquo;s an example of a pipeline that reads a CSV file, filters the rows based on a condition, and calculates the sum of a column:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-golang data-lang=golang><span style=display:flex><span><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> (
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;bufio&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;encoding/csv&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;fmt&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;os&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;strconv&#34;</span>
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// Define the pipeline functions.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// The `readCSV` function reads a CSV file and returns a slice of rows.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>readCSV</span>(<span style=color:#a6e22e>path</span> <span style=color:#66d9ef>string</span>) [][]<span style=color:#66d9ef>string</span> {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Open the file.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>file</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>os</span>.<span style=color:#a6e22e>Open</span>(<span style=color:#a6e22e>path</span>)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        panic(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>defer</span> <span style=color:#a6e22e>file</span>.<span style=color:#a6e22e>Close</span>()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Create a CSV reader.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>reader</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>csv</span>.<span style=color:#a6e22e>NewReader</span>(<span style=color:#a6e22e>bufio</span>.<span style=color:#a6e22e>NewReader</span>(<span style=color:#a6e22e>file</span>))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Read all the rows.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>rows</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>reader</span>.<span style=color:#a6e22e>ReadAll</span>()
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>        panic(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>rows</span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// The `filter` function takes a slice of rows and a predicate function, 
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// and returns a new slice with the rows that satisfy the predicate.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>filter</span>(<span style=color:#a6e22e>rows</span> [][]<span style=color:#66d9ef>string</span>, <span style=color:#a6e22e>predicate</span> <span style=color:#66d9ef>func</span>(<span style=color:#a6e22e>row</span> []<span style=color:#66d9ef>string</span>) <span style=color:#66d9ef>bool</span>) [][]<span style=color:#66d9ef>string</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>result</span> [][]<span style=color:#66d9ef>string</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> <span style=color:#a6e22e>_</span>, <span style=color:#a6e22e>row</span> <span style=color:#f92672>:=</span> <span style=color:#66d9ef>range</span> <span style=color:#a6e22e>rows</span> {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>predicate</span>(<span style=color:#a6e22e>row</span>) {
+</span></span><span style=display:flex><span>            <span style=color:#a6e22e>result</span> = append(<span style=color:#a6e22e>result</span>, <span style=color:#a6e22e>row</span>)
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>result</span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// The `sum` function takes a slice of rows and a column index, 
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// and returns the sum of the values in that column.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>sum</span>(<span style=color:#a6e22e>rows</span> [][]<span style=color:#66d9ef>string</span>, <span style=color:#a6e22e>col</span> <span style=color:#66d9ef>int</span>) <span style=color:#66d9ef>int</span> {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>total</span> <span style=color:#66d9ef>int</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> <span style=color:#a6e22e>_</span>, <span style=color:#a6e22e>row</span> <span style=color:#f92672>:=</span> <span style=color:#66d9ef>range</span> <span style=color:#a6e22e>rows</span> {
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>value</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>strconv</span>.<span style=color:#a6e22e>Atoi</span>(<span style=color:#a6e22e>row</span>[<span style=color:#a6e22e>col</span>])
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+</span></span><span style=display:flex><span>            panic(<span style=color:#a6e22e>err</span>)
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        <span style=color:#a6e22e>total</span> <span style=color:#f92672>+=</span> <span style=color:#a6e22e>value</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>total</span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Define the path to the CSV file.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>path</span> <span style=color:#f92672>:=</span> <span style=color:#e6db74>&#34;sales.csv&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Define the predicate function for the filter step.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>predicate</span> <span style=color:#f92672>:=</span> <span style=color:#66d9ef>func</span>(<span style=color:#a6e22e>row</span> []<span style=color:#66d9ef>string</span>) <span style=color:#66d9ef>bool</span> {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>row</span>[<span style=color:#ae81ff>3</span>] <span style=color:#f92672>==</span> <span style=color:#e6db74>&#34;NY&#34;</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Define the column index for the sum step.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>col</span> <span style=color:#f92672>:=</span> <span style=color:#ae81ff>5</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Run the pipeline.
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#a6e22e>rows</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>readCSV</span>(<span style=color:#a6e22e>path</span>)
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>filteredRows</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>filter</span>(<span style=color:#a6e22e>rows</span>, <span style=color:#a6e22e>predicate</span>)
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>total</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>sum</span>(<span style=color:#a6e22e>filteredRows</span>, <span style=color:#a6e22e>col</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>total</span>)
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>In this example, the pipeline reads a CSV file, filters the rows based on a condition, and calculates the sum of a column.</p><p>The pipeline consists of three functions: readCSV, filter, and sum. Each function takes some input and returns some output, and the output of one function is used as the input for the next function.</p><p>By composing these functions in this way, we can create a complex transformation of data with a clear and concise codebase.</p><h4 id=conclusion>Conclusion</h4><p>As you can tell, Golang helps you write in functional style but it doesn’t force you to it.</p><p>Writing in a functional style enhances your code and makes it more self-documented. Actually it will make it more thread-safe also.</p><p>The main support for FP in Golang comes from the use of closures, iterators, and generators.</p><p>Golang still lacks an important aspect of FP: Map, Filter, Reduce, Immutable and Generic types, Pattern Matching and Tails Recursion.</p><p>There should be more work on tail recursion optimization, to encourage developers to use recursion.</p><p>References : <a href=https://medium.com/@geisonfgfg/functional-go-bc116f4c96a4>https://medium.com/@geisonfgfg/functional-go-bc116f4c96a4</a></p></div></div></div></div></section></div><section class=footer id=contact><div class=footer__background_shape><svg viewBox="0 0 1920 79"><path d="M0 0h1920v79L0 0z" data-name="Path 1450"/></svg></div><div class=container><div class=row><div class=col-lg-12><div class=footer__cta><div class=shape-1><svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029"><path data-name="Path 1449" d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z" transform="translate(217.489 188.626)"/></svg></div><div class=shape-2><svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029"><path data-name="Path 1449" d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z" transform="translate(217.489 188.626)"/></svg></div><div class="text-light footer__cta_content"><span>Contact me</span><h2 class=mb-0>Let’s Start a Project</h2></div><div class=footer__cta_action><a class="btn btn-light btn-zoom" href=https://AceTheOps.com/contact>Get in
+touch</a></div></div></div></div><div class="row footer__widget"><div class=col-lg-4><div class="footer__widget_logo mb-5"><img src=https://AceTheOps.com/images/contact/widget-logo.png style=width:400px alt=widget-logo></div></div><div class=col-lg-4 style=margin-left:100px><div class="text-light footer__widget_address mb-5"><h4 class=base-font>Sitemap</h4><ul class="unstyle-list small"><li class=mb-2><a class=text-light href=https://AceTheOps.com/about>About me</a></li><li class=mb-2><a class=text-light href=https://AceTheOps.com/>Frequently Ask Question</a></li><li class=mb-2><a class=text-light href=https://AceTheOps.com/>Privacy & Policy</a></li><li class=mb-2><a class=text-light href=https://AceTheOps.com/>Latest Article</a></li></ul><h4 class=base-font>Address</h4><ul class="fa-ul small"><li class=mb-2><a class=text-light href=tel:><span class=fa-li><i class="fa fa-phone"></i></span></a></li><li class=mb-2><a class=text-light href=mailto:aakriti@acetheops.com><span class=fa-li><i class="fa fa-envelope"></i></span>aakriti@acetheops.com</a></li><li class=mb-2><span class=fa-li><i class="fa fa-map-marker"></i></span>23 Khan Niketon, Grand Street, NYK.</a></li></ul></div></div></div><div class="row footer__footer"><div class=col-lg-6><div class="footer__footer_copy text-light"><p>Copyright 2023 - All Rights Reserved by <a class=text-light href=https://AceTheOps.com/ target=_blank>AceTheOps</a></p></div></div><div class=col-lg-6><div class=footer__footer_social><ul class=unstyle-list><li class="d-inline-block mx-2"><a class=text-light target=_blank href=https://www.facebook.com/><i class="fa fa-facebook-official"></i></a></li><li class="d-inline-block mx-2"><a class=text-light target=_blank href=https://www.linkedin.com/><i class="fa fa-linkedin-square"></i></a></li><li class="d-inline-block mx-2"><a class=text-light target=_blank href=https://www.pinterest.com/><i class="fa fa-pinterest-square"></i></a></li><li class="d-inline-block mx-2"><a class=text-light target=_blank href=https://twitter.com/><i class="fa fa-twitter-square"></i></a></li></ul></div></div></div></div></section><script src="https://maps.googleapis.com/maps/api/js?key=YOUR%20GOOGLE%20MAP%20API&libraries=geometry"></script>
+<script src=https://AceTheOps.com/plugins/jQuery/jquery.min.js></script>
+<script src=https://AceTheOps.com/plugins/bootstrap/bootstrap.min.js></script>
+<script src=https://AceTheOps.com/plugins/slick/slick.min.js></script>
+<script src=https://AceTheOps.com/plugins/waypoint/jquery.waypoints.min.js></script>
+<script src=https://AceTheOps.com/plugins/magnafic-popup/jquery.magnific-popup.min.js></script>
+<script src=https://AceTheOps.com/plugins/tweenmax/TweenMax.min.js></script>
+<script src=https://AceTheOps.com/plugins/imagesloaded/imagesloaded.min.js></script>
+<script src=https://AceTheOps.com/plugins/masonry/masonry.min.js></script>
+<script src=https://AceTheOps.com/js/script.min.js></script></body></html>

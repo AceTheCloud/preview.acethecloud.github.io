@@ -1,0 +1,321 @@
+<!doctype html><html><head><meta charset=utf-8><title>Building a scalable and reliable e-commerce platform with .NET and Azure 🫡</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><link rel=stylesheet href=https://AceTheOps.com/plugins/slick/slick.css><link rel=stylesheet href=https://AceTheOps.com/plugins/slick/slick-theme.css><link rel=stylesheet href=https://AceTheOps.com/plugins/font-awesome/css/font-awesome.min.css><link rel=stylesheet href=https://AceTheOps.com/plugins/magnafic-popup/magnific-popup.css><link href=https://AceTheOps.com/scss/style.min.css rel=stylesheet><link rel="shortcut icon" href=https://AceTheOps.com/images/favicon.ico type=image/x-icon><link rel=icon href=https://AceTheOps.com/images/favicon.png type=image/x-icon><script async src="https://www.googletagmanager.com/gtag/js?id=G-FCQTR1NVY6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-FCQTR1NVY6")</script></head><body><nav class="navbar navbar-expand-lg fixed-top"><div class=container><a href=https://AceTheOps.com/ class=navbar-brand><img src=https://AceTheOps.com/images/site-navigation/logo.png alt=site-logo></a>
+<button type=button class="navbar-toggler collapsed" data-toggle=collapse data-target=#navbarCollapse>
+<span class=navbar-toggler-icon></span>
+<span class=navbar-toggler-icon></span>
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse justify-content-between" id=navbarCollapse><ul class="nav navbar-nav main-navigation my-0 mx-auto"><li class=nav-item><a href=https://AceTheOps.com/#home class="nav-link text-dark text-sm-center p-2">Home</a></li><li class=nav-item><a href=https://AceTheOps.com/#about class="nav-link text-dark text-sm-center p-2">About</a></li><li class=nav-item><a href=https://AceTheOps.com/#service class="nav-link text-dark text-sm-center p-2">Service</a></li><li class=nav-item><a href=https://AceTheOps.com/#portfolio class="nav-link text-dark text-sm-center p-2">Work</a></li><li class=nav-item><a href=https://AceTheOps.com/#resume class="nav-link text-dark text-sm-center p-2">Resume</a></li><li class=nav-item><a href=https://AceTheOps.com/#skills class="nav-link text-dark text-sm-center p-2">Skills</a></li><li class=nav-item><a href=https://AceTheOps.com/#contact class="nav-link text-dark text-sm-center p-2">Contact</a></li></ul><div class=navbar-nav><a href=https://AceTheOps.com/blog class="btn btn-primary btn-zoom hire_button">Blog</a></div></div></div></nav><div id=content><header class=breadCrumb><div class=container><div class=row><div class="col-lg-10 col-md-12 offset-lg-1 offset-md-0 text-center"><h3 class=breadCrumb__title>Building a scalable and reliable e-commerce platform with .NET and Azure 🫡</h3><nav aria-label=breadcrumb class="d-flex justify-content-center"><ol class="breadcrumb align-items-center"><li class=breadcrumb-item><a href=https://AceTheOps.com/>Home</a></li><li class=breadcrumb-item><a href=https://AceTheOps.com/blog>All Post</a></li><li class="breadcrumb-item active" aria-current=page>Building a scalable and reliable e-commerce platform with .NET and Azure 🫡</li></ol></nav></div></div><ul class=post-meta><li><i class="fa fa-calendar"></i>
+December 21, 2022</li><li><i class="fa fa-clock-o"></i>
+11 mins read</li><li><i class="fa fa-tag"></i>
+<a class=text-capitalize href=https://AceTheOps.com/tags/authentication/>authentication</a>
+<a class=text-capitalize href=https://AceTheOps.com/tags/azure/>azure</a>
+<a class=text-capitalize href=https://AceTheOps.com/tags/dotnet/>dotnet</a>
+<a class=text-capitalize href=https://AceTheOps.com/tags/csharp/>csharp</a></li><li><i class="fa fa-folder-open"></i>
+<a class=text-capitalize href=https://AceTheOps.com/categories/blog/>blog</a></li></ul></div></div></div></div></header><section class="section singleBlog"><div class=svg-img><img src=https://AceTheOps.com/images/hero/figure-svg.svg alt></div><div class=animate-shape><img src=https://AceTheOps.com/images/skill/skill-background-shape.svg alt><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600"><defs><linearGradient id="d" x1=".929" y1=".111" x2=".263" y2=".935" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#f1f6f9"/><stop offset="1" stop-color="#f1f6f9" stop-opacity="0"/></linearGradient></defs><g data-name="blob-shape (3)"><path class="blob" fill="url(#d)" d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z"/></g></svg></div><div class=animate-pattern><img src=https://AceTheOps.com/images/service/background-pattern.svg alt=background-shape></div><div class=container><div class=row><div class=col-lg-12><div class=singleBlog__feature><img src=https://AceTheOps.com/ alt=feature-image></div></div></div><div class="row mt-5"><div class=col-lg-12><div class=singleBlog__content><p><strong>E-commerce</strong> is an increasingly competitive and fast-paced industry, and building a scalable and reliable e-commerce platform is crucial for success. .NET and Azure offer a powerful combination of technologies for building such a platform, providing the tools you need to create a beautiful and intuitive shopping experience, store and manage product data, process payments, fulfill orders, and optimize performance.</p><p>In this blog post, we&rsquo;ll explore how to use .NET and Azure to build a scalable and reliable e-commerce platform, covering the following topics:</p><ul><li>ASP.NET Core for creating a modern and responsive web application</li><li>Azure Functions for implementing background tasks and integrating with third-party services</li><li>Azure Cosmos DB for storing and querying product data</li><li>Azure Payment Services for integrating with payment gateways</li><li>Azure Queues for managing the order fulfillment process</li><li>Azure App Insights for monitoring and optimizing performance</li><li>Azure AD for securing the application</li></ul><p>By the end of this blog post, you&rsquo;ll have a solid understanding of how to use .NET and Azure to build a scalable and reliable e-commerce platform that can handle the demands of a growing business.</p><p>Creating a beautiful and intuitive shopping experience with ASP.NET Core and Azure Functions:</p><p>ASP.NET Core is a cross-platform, high-performance, and open-source framework for building modern web applications. It allows you to create responsive and interactive user interfaces using Razor pages, MVC, or web API controllers, and supports a wide range of front-end technologies such as HTML, CSS, and JavaScript.</p><p>To create a beautiful and intuitive shopping experience with ASP.NET Core, you can use the following features:</p><ul><li>Razor pages for creating easy-to-maintain pages with a separation of concerns between markup and code</li><li>MVC for creating flexible and testable controllers that handle HTTP requests and responses</li><li>Web API controllers for creating RESTful APIs that can be consumed by mobile apps or other client applications</li><li>Entity Framework Core for querying and updating data in a database</li><li>Identity for managing user accounts and authentication</li></ul><p>To make your e-commerce application more interactive and responsive, you can also use Azure Functions to implement background tasks and integrate with third-party services. Azure Functions is a serverless compute service that allows you to run small pieces of code in response to triggers such as HTTP requests, timers, or queue messages. You can use Azure Functions to implement a variety of tasks, such as:</p><ul><li>Sending emails with SendGrid</li><li>Processing images with Azure Cognitive Services</li><li>Integrating with payment gateways with Azure Payment Services</li><li>Sending SMS messages with Twilio</li></ul><p><img src=/images/blog/scalable-ecommerce-web-app.png alt="Scalable Ecommerce App"></p><p>To use Azure Functions with your ASP.NET Core application, you can use the Azure Functions bindings to trigger functions from your code or send data to them. For example, you can use the SendGrid binding to send an order confirmation email when a customer places an order:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cs data-lang=cs><span style=display:flex><span><span style=color:#66d9ef>using</span> Microsoft.Azure.WebJobs;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>using</span> Microsoft.Azure.WebJobs.Extensions.Http;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>using</span> Microsoft.Extensions.Logging;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>using</span> SendGrid.Helpers.Mail;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>namespace</span> Ecommerce.Functions
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>static</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>SendOrderConfirmationEmail</span>
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span><span style=color:#a6e22e>        [FunctionName(&#34;SendOrderConfirmationEmail&#34;)]</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>static</span> <span style=color:#66d9ef>void</span> Run(
+</span></span><span style=display:flex><span><span style=color:#a6e22e>            [HttpTrigger(AuthorizationLevel.Function, &#34;post&#34;, Route = null)]</span> Order order,
+</span></span><span style=display:flex><span><span style=color:#a6e22e>            [SendGrid(ApiKey = &#34;SendGridApiKey&#34;)]</span> <span style=color:#66d9ef>out</span> SendGridMessage message,
+</span></span><span style=display:flex><span>            ILogger log)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            message = <span style=color:#66d9ef>new</span> SendGridMessage();
+</span></span><span style=display:flex><span>            message.From = <span style=color:#66d9ef>new</span> EmailAddress(<span style=color:#e6db74>&#34;noreply@ecommerce.com&#34;</span>, <span style=color:#e6db74>&#34;Ecommerce&#34;</span>);
+</span></span><span style=display:flex><span>            message.Subject = <span style=color:#e6db74>&#34;Order Confirmation&#34;</span>;
+</span></span><span style=display:flex><span>            message.AddTo(order.Customer.Email, order.Customer.Name);
+</span></span><span style=display:flex><span>            message.AddContent(MimeType.Html, <span style=color:#e6db74>$&#34;&lt;h1&gt;Thank you for your order!&lt;/h1&gt;&lt;p&gt;&#34;</span>+
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;Your order number is: {order.Id}&lt;/p&gt;&lt;p&gt;Total amount: {order.Amount}&lt;/p&gt;&#34;</span>);
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Order</span>
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>string</span> Id { <span style=color:#66d9ef>get</span>; <span style=color:#66d9ef>set</span>; }
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>decimal</span> Amount { <span style=color:#66d9ef>get</span>; <span style=color:#66d9ef>set</span>; }
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> Customer Customer { <span style=color:#66d9ef>get</span>; <span style=color:#66d9ef>set</span>; }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Customer</span>
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>string</span> Name { <span style=color:#66d9ef>get</span>; <span style=color:#66d9ef>set</span>; }
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>string</span> Email { <span style=color:#66d9ef>get</span>; <span style=color:#66d9ef>set</span>; }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>To use the SendGrid binding, you will need to specify the SendGrid attribute on the output parameter, and set the ApiKey property to the API key of your SendGrid account. The function will then be triggered when an HTTP POST request is received, and the SendGridMessage object will be sent to SendGrid to be delivered to the specified email address.</p><h3 id=storing-and-managing-product-data-with-azure-cosmos-db-and-net>Storing and managing product data with Azure Cosmos DB and .NET:</h3><p>In an e-commerce application, the product catalog is a critical component that needs to be fast, scalable, and reliable. Azure Cosmos DB is a globally distributed, multi-model database service that allows you to store and query data with low latency and high throughput. It offers a number of APIs including SQL, MongoDB, Cassandra, and Azure Table Storage, making it easy to store and query data in the format that best fits your needs.</p><p>To store and query product data with Azure Cosmos DB and .NET, you can use the following steps:</p><ol><li>Create a Cosmos DB account and database in the Azure portal.</li><li>Install the .NET SDK for Cosmos DB in your application.</li><li>Define a model class for your products, annotating the properties with the JsonPropertyName attribute to specify the corresponding field names in the database.</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cs data-lang=cs><span style=display:flex><span><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Product</span>
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span><span style=color:#a6e22e>    [JsonPropertyName(&#34;id&#34;)]</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>string</span> Id { <span style=color:#66d9ef>get</span>; <span style=color:#66d9ef>set</span>; }
+</span></span><span style=display:flex><span><span style=color:#a6e22e>
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>    [JsonPropertyName(&#34;category&#34;)]</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>string</span> Category { <span style=color:#66d9ef>get</span>; <span style=color:#66d9ef>set</span>; }
+</span></span><span style=display:flex><span><span style=color:#a6e22e>
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>    [JsonPropertyName(&#34;name&#34;)]</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>string</span> Name { <span style=color:#66d9ef>get</span>; <span style=color:#66d9ef>set</span>; }
+</span></span><span style=display:flex><span><span style=color:#a6e22e>
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>    [JsonPropertyName(&#34;description&#34;)]</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>string</span> Description { <span style=color:#66d9ef>get</span>; <span style=color:#66d9ef>set</span>; }
+</span></span><span style=display:flex><span><span style=color:#a6e22e>
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>    [JsonPropertyName(&#34;price&#34;)]</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>decimal</span> Price { <span style=color:#66d9ef>get</span>; <span style=color:#66d9ef>set</span>; }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><ol start=4><li>Create a service class that uses the .NET SDK for Cosmos DB to create the database and container, and add, update, delete, and query products.</li></ol><p>Here is an example of a C# service class that uses the .NET SDK for Cosmos DB to create the database and container, and add, update, delete, and query products:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cs data-lang=cs><span style=display:flex><span><span style=color:#66d9ef>using</span> Microsoft.Azure.Cosmos;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>namespace</span> Ecommerce.Web.Services
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>CosmosDbService</span>
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>readonly</span> CosmosClient _client;
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>readonly</span> Container _container;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> CosmosDbService(<span style=color:#66d9ef>string</span> connectionString, <span style=color:#66d9ef>string</span> databaseName, <span style=color:#66d9ef>string</span> containerName)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            _client = <span style=color:#66d9ef>new</span> CosmosClient(connectionString);
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>var</span> database = _client.GetDatabase(databaseName);
+</span></span><span style=display:flex><span>            _container = database.GetContainer(containerName);
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>async</span> Task&lt;Product&gt; GetProductAsync(<span style=color:#66d9ef>string</span> id)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>try</span>
+</span></span><span style=display:flex><span>            {
+</span></span><span style=display:flex><span>                ItemResponse&lt;Product&gt; response = <span style=color:#66d9ef>await</span> _container.ReadItemAsync&lt;Product&gt;
+</span></span><span style=display:flex><span>                (id, <span style=color:#66d9ef>new</span> PartitionKey(<span style=color:#e6db74>&#34;Electronics&#34;</span>));
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>return</span> response.Value;
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>catch</span> (CosmosException ex) when (ex.StatusCode == HttpStatusCode.NotFound)
+</span></span><span style=display:flex><span>            {
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>null</span>;
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>async</span> Task&lt;IEnumerable&lt;Product&gt;&gt; GetProductsAsync(<span style=color:#66d9ef>string</span> category)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>var</span> query = _container.GetItemLinqQueryable&lt;Product&gt;()
+</span></span><span style=display:flex><span>                .Where(p =&gt; p.Category == category)
+</span></span><span style=display:flex><span>                .ToFeedIterator();
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>            List&lt;Product&gt; results = <span style=color:#66d9ef>new</span> List&lt;Product&gt;();
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>while</span> (query.HasMoreResults)
+</span></span><span style=display:flex><span>            {
+</span></span><span style=display:flex><span>                results.AddRange(<span style=color:#66d9ef>await</span> query.ReadNextAsync());
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> results;
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>async</span> Task AddProductAsync(Product product)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>await</span> _container.CreateItemAsync(product, <span style=color:#66d9ef>new</span> PartitionKey(product.Category));
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>async</span> Task UpdateProductAsync(<span style=color:#66d9ef>string</span> id, Product product)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>await</span> _container.UpsertItemAsync(product, <span style=color:#66d9ef>new</span> PartitionKey(product.Category));
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>async</span> Task DeleteProductAsync(<span style=color:#66d9ef>string</span> id)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>await</span> _container.DeleteItemAsync&lt;Product&gt;(id, <span style=color:#66d9ef>new</span> PartitionKey(<span style=color:#e6db74>&#34;Electronics&#34;</span>));
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>In this example, the CosmosDbService class takes the connection string, database name, and container name as arguments in the constructor.</p><p>It uses these to create a CosmosClient object and a Container object, which it uses to perform various operations on the products stored in the database.</p><p>The methods include GetProductAsync to retrieve a single product by its ID, GetProductsAsync to retrieve a list of products by category, AddProductAsync to add a new product, UpdateProductAsync to update an existing product, and DeleteProductAsync to delete a product.</p><h3 id=integrating-payment-processing-with-azure-payment-services-and-net>Integrating payment processing with Azure Payment Services and .NET:</h3><p>Accepting payments online is a crucial part of any e-commerce platform. Azure Payment Services is a set of services that allow you to integrate with various payment gateways, enabling you to accept payments from a variety of sources such as credit cards, bank transfers, and digital wallets.</p><p>To integrate payment processing with Azure Payment Services and .NET, you can use the following steps:</p><ol><li>Create an Azure Payment Services account and configure the payment gateways you want to use.</li><li>Install the .NET SDK for Azure Payment Services in your application.</li><li>Create a service class that uses the .NET SDK to create payment requests, process payment responses, and handle errors.</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cs data-lang=cs><span style=display:flex><span><span style=color:#66d9ef>using</span> Microsoft.Azure.PaymentServices;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>using</span> Microsoft.Azure.PaymentServices.Clients;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>namespace</span> Ecommerce.Web.Services
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>PaymentService</span>
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>readonly</span> PaymentClient _client;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> PaymentService(<span style=color:#66d9ef>string</span> connectionString)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            _client = <span style=color:#66d9ef>new</span> PaymentClient(connectionString);
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>async</span> Task&lt;PaymentRequest&gt; CreatePaymentRequestAsync(<span style=color:#66d9ef>string</span> gatewayId, 
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>decimal</span> amount, <span style=color:#66d9ef>string</span> currency, <span style=color:#66d9ef>string</span> customerId, <span style=color:#66d9ef>string</span> returnUrl, <span style=color:#66d9ef>string</span> cancelUrl)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>var</span> request = <span style=color:#66d9ef>new</span> PaymentRequest
+</span></span><span style=display:flex><span>            {
+</span></span><span style=display:flex><span>                Amount = amount,
+</span></span><span style=display:flex><span>                Currency = currency,
+</span></span><span style=display:flex><span>                GatewayId = gatewayId,
+</span></span><span style=display:flex><span>                CustomerId = customerId,
+</span></span><span style=display:flex><span>                ReturnUrl = returnUrl,
+</span></span><span style=display:flex><span>                CancelUrl = cancelUrl
+</span></span><span style=display:flex><span>            };
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>await</span> _client.Payments.CreateAsync(request);
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>async</span> Task&lt;PaymentResponse&gt; ProcessPaymentResponseAsync
+</span></span><span style=display:flex><span>        (<span style=color:#66d9ef>string</span> paymentId, <span style=color:#66d9ef>string</span> gatewayId)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>await</span> _client.Payments.ProcessAsync(paymentId, gatewayId);
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>async</span> Task HandlePaymentErrorAsync(<span style=color:#66d9ef>string</span> paymentId, PaymentError error)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>await</span> _client.Payments.SetErrorAsync(paymentId, error);
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><ol start=4><li>In your ASP.NET Core application, use the payment service to create payment requests, redirect the user to the payment gateway, and process payment responses.</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cs data-lang=cs><span style=display:flex><span><span style=color:#66d9ef>using</span> Microsoft.AspNetCore.Mvc;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>namespace</span> Ecommerce.Web.Controllers
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>PaymentController</span> : Controller
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>readonly</span> PaymentService _paymentService;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> PaymentController(PaymentService paymentService)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            _paymentService = paymentService;
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span><span style=color:#a6e22e>
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>        [HttpGet]</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>async</span> Task&lt;IActionResult&gt; Checkout(<span style=color:#66d9ef>string</span> gatewayId, <span style=color:#66d9ef>decimal</span> amount,
+</span></span><span style=display:flex><span>         <span style=color:#66d9ef>string</span> currency, <span style=color:#66d9ef>string</span> customerId, <span style=color:#66d9ef>string</span> returnUrl, <span style=color:#66d9ef>string</span> cancelUrl)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>var</span> request = <span style=color:#66d9ef>await</span> _paymentService.CreatePaymentRequestAsync(gatewayId, 
+</span></span><span style=display:flex><span>            amount, currency, customerId, returnUrl, cancelUrl);
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> Redirect(request.RedirectUrl);
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span><span style=color:#a6e22e>
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>        [HttpGet]</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>async</span> Task&lt;IActionResult&gt; Complete(<span style=color:#66d9ef>string</span> paymentId, <span style=color:#66d9ef>string</span> gatewayId)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>var</span> response = <span style=color:#66d9ef>await</span> _paymentService.ProcessPaymentResponseAsync(paymentId, gatewayId);
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> (response.Success)
+</span></span><span style=display:flex><span>            {
+</span></span><span style=display:flex><span>                <span style=color:#75715e>// Update the order status and redirect to the order confirmation page</span>
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>return</span> RedirectToAction(<span style=color:#e6db74>&#34;Confirmation&#34;</span>, <span style=color:#e6db74>&#34;Order&#34;</span>, <span style=color:#66d9ef>new</span> { orderId = response.OrderId });
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>else</span>
+</span></span><span style=display:flex><span>            {
+</span></span><span style=display:flex><span>                <span style=color:#75715e>// Display an error message and redirect to the checkout page</span>
+</span></span><span style=display:flex><span>                TempData[<span style=color:#e6db74>&#34;Error&#34;</span>] = response.Error.Message;
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>return</span> RedirectToAction(<span style=color:#e6db74>&#34;Checkout&#34;</span>, <span style=color:#e6db74>&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74></span>                <span style=color:#75715e>// Handle payment error</span>
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>await</span> _paymentService.HandlePaymentErrorAsync(paymentId, response.Error);
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>return</span> RedirectToAction(<span style=color:#e6db74>&#34;Checkout&#34;</span>, <span style=color:#e6db74>&#34;Cart&#34;</span>);
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span><span style=color:#a6e22e>
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>        [HttpGet]</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>async</span> Task&lt;IActionResult&gt; Cancel(<span style=color:#66d9ef>string</span> paymentId, <span style=color:#66d9ef>string</span> gatewayId)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>var</span> error = <span style=color:#66d9ef>new</span> PaymentError
+</span></span><span style=display:flex><span>            {
+</span></span><span style=display:flex><span>                Code = <span style=color:#e6db74>&#34;USER_CANCELED&#34;</span>,
+</span></span><span style=display:flex><span>                Message = <span style=color:#e6db74>&#34;The user cancelled the payment.&#34;</span>
+</span></span><span style=display:flex><span>            };
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>await</span> _paymentService.HandlePaymentErrorAsync(paymentId, error);
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> RedirectToAction(<span style=color:#e6db74>&#34;Checkout&#34;</span>, <span style=color:#e6db74>&#34;Cart&#34;</span>);
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>In this example, the PaymentController has three actions: Checkout, Complete, and Cancel.</p><p>The Checkout action is called when the user initiates the payment process, and it creates a payment request using the PaymentService and redirects the user to the payment gateway.</p><p>The Complete action is called when the user is redirected back to the application after completing the payment, and it processes the payment response using the PaymentService.</p><p>If the payment was successful, it updates the order status and redirects the user to the order confirmation page. If the payment was not successful, it displays an error message and redirects the user back to the checkout page.</p><p>The Cancel action is called when the user cancels the payment, and it handles the payment error by calling the HandlePaymentErrorAsync method of the PaymentService.</p><h3 id=leveraging-machine-learning-to-personalize-the-shopping-experience-with-azure-ml-and-net>Leveraging machine learning to personalize the shopping experience with Azure ML and .NET</h3><p>Here is an example of a C# microservice that leverages machine learning to personalize the shopping experience with Azure ML and .NET:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cs data-lang=cs><span style=display:flex><span><span style=color:#66d9ef>using</span> Microsoft.Azure.CognitiveServices.Personalizer;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>using</span> Microsoft.Azure.CognitiveServices.Personalizer.Models;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>namespace</span> Ecommerce.Web.Services
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>PersonalizationService</span>
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>readonly</span> PersonalizerClient _client;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> PersonalizationService(<span style=color:#66d9ef>string</span> endpoint, <span style=color:#66d9ef>string</span> apiKey)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            _client = <span style=color:#66d9ef>new</span> PersonalizerClient(<span style=color:#66d9ef>new</span> ApiKeyServiceClientCredentials(apiKey))
+</span></span><span style=display:flex><span>            {
+</span></span><span style=display:flex><span>                Endpoint = endpoint
+</span></span><span style=display:flex><span>            };
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>async</span> Task&lt;RankedAction&gt; GetNextActionAsync(<span style=color:#66d9ef>string</span> context, IEnumerable&lt;Action&gt; actions)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>var</span> request = <span style=color:#66d9ef>new</span> RankRequest
+</span></span><span style=display:flex><span>            {
+</span></span><span style=display:flex><span>                ContextFeatures = JsonConvert.DeserializeObject&lt;List&lt;ContextFeature&gt;&gt;(context),
+</span></span><span style=display:flex><span>                Actions = actions
+</span></span><span style=display:flex><span>            };
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>await</span> _client.RankAsync(request);
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>async</span> Task RewardAsync(<span style=color:#66d9ef>string</span> eventId, <span style=color:#66d9ef>double</span> <span style=color:#66d9ef>value</span>)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>await</span> _client.RewardAsync(eventId, <span style=color:#66d9ef>value</span>);
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>async</span> Task&lt;IEnumerable&lt;Product&gt;&gt; GetRecommendedProductsAsync(<span style=color:#66d9ef>string</span> customerId, <span style=color:#66d9ef>int</span> count)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>var</span> context = <span style=color:#66d9ef>new</span>
+</span></span><span style=display:flex><span>            {
+</span></span><span style=display:flex><span>                CustomerId = customerId
+</span></span><span style=display:flex><span>            };
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>var</span> actions = _productService.GetAll().Select(p =&gt; <span style=color:#66d9ef>new</span> Action
+</span></span><span style=display:flex><span>            {
+</span></span><span style=display:flex><span>                Id = p.Id.ToString(),
+</span></span><span style=display:flex><span>                Features = <span style=color:#66d9ef>new</span> List&lt;Feature&gt;
+</span></span><span style=display:flex><span>                {
+</span></span><span style=display:flex><span>                    <span style=color:#66d9ef>new</span> Feature(<span style=color:#e6db74>&#34;Category&#34;</span>, p.Category),
+</span></span><span style=display:flex><span>                    <span style=color:#66d9ef>new</span> Feature(<span style=color:#e6db74>&#34;Price&#34;</span>, p.Price)
+</span></span><span style=display:flex><span>                }
+</span></span><span style=display:flex><span>            });
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>var</span> rankedActions = <span style=color:#66d9ef>await</span> _personalizationService.GetNextActionAsync(
+</span></span><span style=display:flex><span>                JsonConvert.SerializeObject(context), actions);
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>return</span> rankedActions.Actions.Take(count).
+</span></span><span style=display:flex><span>                    Select(a =&gt; _productService.GetById(Guid.Parse(a.Id)));
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>In this example, the PersonalizationService class takes the endpoint and API key of the Azure ML Personalizer service as arguments in the constructor. It uses these to create a PersonalizerClient object, which it uses to perform various operations. The GetNextActionAsync method takes a context and a list of actions as input, and returns a ranked list of actions based on their predicted score.</p><p>In this example, the GetRecommendedProductsAsync method uses the PersonalizationService to get a ranked list of products based on the customer&rsquo;s past interactions and preferences. It does this by defining the customer&rsquo;s ID as the context and the products as the actions, and calling the GetNextActionAsync method of the PersonalizationService. It then returns the top count products from the ranked list.</p><p>This is just a simple example of how you can use Azure ML Personalizer and .NET to personalize the shopping experience for your customers. You can use a variety of context features and action features to tailor the recommendations to your specific use case.</p><p>You can also use the RewardAsync method of the PersonalizationService to provide feedback on the effectiveness of the recommendations and improve the accuracy of the model over time.</p><h3 id=deploying-to-azure-kubernetes-service-aks>Deploying to Azure Kubernetes Service (AKS)</h3><p>To deploy the Payment Service microservices to AKS (Azure Kubernetes Service) on Azure, you will need to follow the steps below:</p><ul><li>Create an Azure Kubernetes Service cluster. You can do this using the Azure portal, Azure CLI, or Azure PowerShell.</li><li>Create a Docker image of each microservice. You can do this by writing a Dockerfile for each microservice, and using the docker build command to build the image.</li><li>Push the Docker images to a container registry. You can use Azure Container Registry or a registry such as Docker Hub.</li><li>Create a deployment manifest for each microservice. A deployment manifest is a YAML file that specifies the details of the deployment, such as the number of replicas and the container image to use.</li><li>Use the kubectl command-line tool to deploy the microservices to the AKS cluster. You can do this by using the kubectl apply command and specifying the deployment manifest file.</li></ul><p>Here is an example of a deployment manifest for a microservice:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yml data-lang=yml><span style=display:flex><span><span style=color:#f92672>apiVersion</span>: <span style=color:#ae81ff>apps/v1</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>kind</span>: <span style=color:#ae81ff>Deployment</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>metadata</span>:
+</span></span><span style=display:flex><span>  <span style=color:#f92672>name</span>: <span style=color:#ae81ff>payment-service</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>labels</span>:
+</span></span><span style=display:flex><span>    <span style=color:#f92672>app</span>: <span style=color:#ae81ff>payment-service</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>spec</span>:
+</span></span><span style=display:flex><span>  <span style=color:#f92672>replicas</span>: <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>selector</span>:
+</span></span><span style=display:flex><span>    <span style=color:#f92672>matchLabels</span>:
+</span></span><span style=display:flex><span>      <span style=color:#f92672>app</span>: <span style=color:#ae81ff>payment-service</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>template</span>:
+</span></span><span style=display:flex><span>    <span style=color:#f92672>metadata</span>:
+</span></span><span style=display:flex><span>      <span style=color:#f92672>labels</span>:
+</span></span><span style=display:flex><span>        <span style=color:#f92672>app</span>: <span style=color:#ae81ff>payment-service</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>spec</span>:
+</span></span><span style=display:flex><span>      <span style=color:#f92672>containers</span>:
+</span></span><span style=display:flex><span>        - <span style=color:#f92672>name</span>:
+</span></span><span style=display:flex><span>          <span style=color:#f92672>image</span>: <span style=color:#ae81ff>myregistry.azurecr.io/payment-service:latest</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>ports</span>:
+</span></span><span style=display:flex><span>            - <span style=color:#f92672>containerPort</span>: <span style=color:#ae81ff>80</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>env</span>:
+</span></span><span style=display:flex><span>            - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>PaymentService__Endpoint</span>
+</span></span><span style=display:flex><span>              <span style=color:#f92672>value</span>: <span style=color:#e6db74>&#34;https://myservice.azurewebsites.net&#34;</span>
+</span></span><span style=display:flex><span>            - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>PaymentService__ApiKey</span>
+</span></span><span style=display:flex><span>              <span style=color:#f92672>value</span>: <span style=color:#e6db74>&#34;abcdefghijklmnopqrstuvwxyz&#34;</span>
+</span></span></code></pre></div><p>In this example, the deployment manifest specifies that there should be one replica of the payment-service microservice, and it should use the payment-service image from the specified container registry. It also specifies the environment variables that should be passed to the container, such as the endpoint and API key for the payment service.</p><p>Once you have created the deployment manifests and pushed the Docker images to the container registry, you can use the kubectl apply command to deploy the microservices to the AKS cluster:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>kubectl apply -f payment-service-deployment.yaml
+</span></span><span style=display:flex><span>kubectl apply -f personalization-service-deployment.yaml
+</span></span></code></pre></div><p>This will deploy the microservices to the AKS cluster, and they will be accessible via the cluster&rsquo;s internal network. You can then create a load balancer or use an ingress controller to expose the microservices to the public internet.</p></div></div></div></div></section></div><section class=footer id=contact><div class=footer__background_shape><svg viewBox="0 0 1920 79"><path d="M0 0h1920v79L0 0z" data-name="Path 1450"/></svg></div><div class=container><div class=row><div class=col-lg-12><div class=footer__cta><div class=shape-1><svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029"><path data-name="Path 1449" d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z" transform="translate(217.489 188.626)"/></svg></div><div class=shape-2><svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029"><path data-name="Path 1449" d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z" transform="translate(217.489 188.626)"/></svg></div><div class="text-light footer__cta_content"><span>Contact me</span><h2 class=mb-0>Let’s Start a Project</h2></div><div class=footer__cta_action><a class="btn btn-light btn-zoom" href=https://AceTheOps.com/contact>Get in
+touch</a></div></div></div></div><div class="row footer__widget"><div class=col-lg-4><div class="footer__widget_logo mb-5"><img src=https://AceTheOps.com/images/contact/widget-logo.png style=width:400px alt=widget-logo></div></div><div class=col-lg-4 style=margin-left:100px><div class="text-light footer__widget_address mb-5"><h4 class=base-font>Sitemap</h4><ul class="unstyle-list small"><li class=mb-2><a class=text-light href=https://AceTheOps.com/about>About me</a></li><li class=mb-2><a class=text-light href=https://AceTheOps.com/>Frequently Ask Question</a></li><li class=mb-2><a class=text-light href=https://AceTheOps.com/>Privacy & Policy</a></li><li class=mb-2><a class=text-light href=https://AceTheOps.com/>Latest Article</a></li></ul><h4 class=base-font>Address</h4><ul class="fa-ul small"><li class=mb-2><a class=text-light href=tel:><span class=fa-li><i class="fa fa-phone"></i></span></a></li><li class=mb-2><a class=text-light href=mailto:aakriti@acetheops.com><span class=fa-li><i class="fa fa-envelope"></i></span>aakriti@acetheops.com</a></li><li class=mb-2><span class=fa-li><i class="fa fa-map-marker"></i></span>23 Khan Niketon, Grand Street, NYK.</a></li></ul></div></div></div><div class="row footer__footer"><div class=col-lg-6><div class="footer__footer_copy text-light"><p>Copyright 2023 - All Rights Reserved by <a class=text-light href=https://AceTheOps.com/ target=_blank>AceTheOps</a></p></div></div><div class=col-lg-6><div class=footer__footer_social><ul class=unstyle-list><li class="d-inline-block mx-2"><a class=text-light target=_blank href=https://www.facebook.com/><i class="fa fa-facebook-official"></i></a></li><li class="d-inline-block mx-2"><a class=text-light target=_blank href=https://www.linkedin.com/><i class="fa fa-linkedin-square"></i></a></li><li class="d-inline-block mx-2"><a class=text-light target=_blank href=https://www.pinterest.com/><i class="fa fa-pinterest-square"></i></a></li><li class="d-inline-block mx-2"><a class=text-light target=_blank href=https://twitter.com/><i class="fa fa-twitter-square"></i></a></li></ul></div></div></div></div></section><script src="https://maps.googleapis.com/maps/api/js?key=YOUR%20GOOGLE%20MAP%20API&libraries=geometry"></script>
+<script src=https://AceTheOps.com/plugins/jQuery/jquery.min.js></script>
+<script src=https://AceTheOps.com/plugins/bootstrap/bootstrap.min.js></script>
+<script src=https://AceTheOps.com/plugins/slick/slick.min.js></script>
+<script src=https://AceTheOps.com/plugins/waypoint/jquery.waypoints.min.js></script>
+<script src=https://AceTheOps.com/plugins/magnafic-popup/jquery.magnific-popup.min.js></script>
+<script src=https://AceTheOps.com/plugins/tweenmax/TweenMax.min.js></script>
+<script src=https://AceTheOps.com/plugins/imagesloaded/imagesloaded.min.js></script>
+<script src=https://AceTheOps.com/plugins/masonry/masonry.min.js></script>
+<script src=https://AceTheOps.com/js/script.min.js></script></body></html>
